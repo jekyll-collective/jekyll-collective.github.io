@@ -17,35 +17,46 @@ baseurl: ""
 title: The Jekyll Collective
 
 # Short description of your site
-description: "A Collective of Jekyll Theme Authors And Maintainers."
+description: "A Community for Jekyll theme authors, aaintainers and contributors."
 
 # --- Navigation bar options --- #
 
 # List of links in the navigation bar
+#navbar-links:
+#  About Me: "aboutus"
+#  Example: "Example"
+#    -Example2: "testing"
+#    -Example2: "testing"
+
 navbar-links:
-  About Me: "aboutus"
+  Community: 'https://discourse.jekyll-collective.ovh'
+  Members: 'members'
+  About Us: 'aboutus'
+  Resources:
+    - Jekyll: https://jekyllrb.com/
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/img/avatar-icon.png"
+avatar: "/img/logo/Icon2.png"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
-# title-img: /path/to/image
+title-img: "/img/logo/icons-large.png"
 
 # --- Background colour/image options --- #
 
 # Personalize the colors in your website. Colour values can be any valid CSS colour
 
-navbar-col: "#F5F5F5"
-navbar-text-col: "#404040"
-navbar-children-col: "#F5F5F5"
-page-col: "#FFFFFF"
-link-col: "#008AFF"
-hover-col: "#0085A1"
-footer-col: "#F5F5F5"
-footer-text-col: "#777777"
-footer-link-col: "#404040"
+# Color Template https://color.adobe.com/de/Neutral-Blue-color-theme-22361/
+navbar-col: "#D1DBBD"
+navbar-text-col: "#193441"
+navbar-children-col: "#D1DBBD"
+page-col: "#EFF2E9"
+link-col: "#193441"
+hover-col: "#3E606F"
+footer-col: "#D1DBBD"
+footer-text-col: "#193441"
+footer-link-col: "#3E606F"
 
 # Alternatively, the navbar, footer, and page background can be set to use background images
 # instead of colour
@@ -59,7 +70,7 @@ footer-link-col: "#404040"
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Some Person
+  name: The Jekyll Collective
 
 # Select your active Social Network Links.
 # Uncomment the links you want to show in the footer and add your information to each link.
@@ -69,7 +80,7 @@ social-network-links:
   rss: true
 #  email: "someone@example.com"
 #  facebook: daattali
-  github: "jekyll-collective" 
+  github: "jekyll-collective"
 #  twitter: daattali
 #  reddit: yourname
 #  google-plus: +DeanAttali
@@ -94,7 +105,7 @@ share-links-active:
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "The Jekyll Collective"  # eg. "deanattali.com/beautiful-jekyll"
+#url-pretty: "The Jekyll Collective"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Web Statistics Section --- #
 
@@ -137,11 +148,12 @@ title-separator: "-"
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Vancouver"
+timezone: "Europe/Berlin"
 markdown: kramdown
 highlighter: rouge
 permalink: /:year-:month-:day-:title/
 paginate: 5
+paginate_path: "/blog/page:num/"
 
 kramdown:
   input: GFM
