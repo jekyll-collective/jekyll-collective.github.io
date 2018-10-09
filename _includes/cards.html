@@ -1,0 +1,18 @@
+<div class="row text-center">
+{% for Element in site.data.Members %}
+    <div class="col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center">
+      <div class="card">
+        {%- assign Name = Element.Name-%}
+        {%- assign About = Element.Desc -%}
+        {%- assign Image = Element.Image -%}
+        {%- assign Link = Element.Link -%}
+        <a target="_blank" href="{{- Link -}}" class="card-link" title="Go to Github profile">
+          <img src="{{- Image -}}" class="card-avatar hd-shadow">
+          <h4>{{- Name -}}</h4>
+          <hr class="seperator">
+          <p class="text-muted">{{- About -}}</p>
+        </a>
+      </div>
+    </div>
+{% endfor %}
+</div>
